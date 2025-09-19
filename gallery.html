@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+        }
+
+        .topbar {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .topbar a {
+            margin: 25px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .topbar a:hover {
+            color: teal;
+        }
+
+        .topbar a.active {
+            color: teal;
+        }
+
+        .footer {
+            background-color: rgb(31, 31, 31);
+            height: 130px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 34px 0 40px;
+        }
+
+        .footer div p {
+            color: white;
+        }
+
+        .footer div a {
+            margin: 0 5px;
+        }
+
+        .aa {
+            background-color: rgb(33, 33, 33);
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .aa h1 {
+            color: #fff;
+            font-size: 35px;
+            font-weight: normal;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 15px 28px 12px;
+        }
+
+        .ab {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1.5px solid #292929;
+            padding: 0;
+            max-width: 620px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .ac {
+            text-align: center;
+            margin: 25px;
+        }
+
+    ul.gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 15px; 
+        list-style: none;
+        padding: 0;
+        margin: 20px auto;
+        max-width: 1000px; 
+    }
+
+    ul.gallery li {
+        border: 2px solid black; 
+        text-align: center;
+        padding: 10px;
+    }
+
+    ul.gallery li img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="img/logo.jpg" alt="">
+    </div>
+
+    <div class="topbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="gallery.html">Gallery</a>
+        <a href="home.html">Blog</a>
+        <a href="home.html">Contact</a>
+    </div>
+
+    <div class="aa">
+        <h1><span>Gallery</span></h1>
+    </div>
+
+    <ul class="gallery">
+        <li>
+            <a href="">
+                <img src="img/mustache1.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="img/mustache2.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="img/mustache3.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="img/mustache4.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="img/mustache5.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="img/mustache6.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="img/mustache7.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="img/mustache8.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="img/mustache9.jpg" alt="">
+            </a>
+        </li>
+    </ul>
+
+    <div class="footer">
+
+        <div>
+            <p>© 2023 by Mustacchio. All rights reserved.</p>
+        </div>
+
+        <div>
+            <a href=""><img src="img/icons/icon-twitter.jpg"></a>
+            <a href=""><img src="img/icons/icon-facebook.jpg"></a>
+            <a href=""><img src="img/icons/icon-googleplus.jpg"></a>
+            <a href=""><img src="img/icons/icon-pinterest.jpg"></a>
+        </div>
+    </div>
+</body>
+
+</html>

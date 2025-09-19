@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+        }
+
+        .topbar {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .topbar a {
+            margin: 25px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .topbar a:hover {
+            color: teal;
+        }
+
+        .topbar a.active {
+            color: teal;
+        }
+
+        .banner {
+            background-image: url(img/the-beacon.jpg);
+            height: 500px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .subcont {
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+        }
+
+        .aa {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            font-size: 22px;
+            padding: 8px 12px;
+            display: inline-block;
+        }
+
+        .ab {
+            background-color: rgba(45, 45, 45, 0.9);
+            color: white;
+            padding: 8px 12px;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .ac {
+            background-color: teal;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.3s;
+            align-self: flex-start;
+        }
+
+        .gallery {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5px;
+            border: 2px solid black;
+        }
+
+        .gallery p {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 10px;
+            display: block;
+        }
+
+        .footer {
+            background-color: rgb(31, 31, 31);
+            height: 130px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 34px 0 40px;
+        }
+        .footer div p {
+            color: white;
+        }
+        .footer div a {
+            margin: 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="img/logo.jpg" alt="">
+    </div>
+
+    <div class="topbar">
+        <a class="active" href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="home.html">Blog</a>
+        <a href="home.html">Contact</a>
+    </div>
+
+    <div class="banner">
+        <div class="subcont">
+            <div class="aa">THE BEACON TO ALL MANKIND</div>
+            <div class="ab">Our website templates are created with </div>
+            <div class="ab">inspiration, checked for quality and originality</div>
+            <div class="ab">and meticulously sliced and coded.</div>
+            <button class="ac">READ MORE</button>
+        </div>
+    </div>
+
+    <div class="gallery">
+
+        <div> <img src="img/the-father.jpg" alt="">
+            <p>The father</p>
+        </div>
+
+        <div> <img src="img/the-actor.jpg" alt="">
+            <p>The actor</p>
+        </div>
+
+        <div> <img src="img/the-nerd.jpg" alt="">
+            <p>The nerd</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div>
+            <p>© 2023 by Mustacchio. All rights reserved.</p>
+        </div>
+
+        <div>
+            <a href=""><img src="img/icons/icon-twitter.jpg"></a>
+            <a href=""><img src="img/icons/icon-facebook.jpg"></a>
+            <a href=""><img src="img/icons/icon-googleplus.jpg"></a>
+            <a href=""><img src="img/icons/icon-pinterest.jpg"></a>
+
+        </div>
+    </div>
+</body>
+
+</html>
